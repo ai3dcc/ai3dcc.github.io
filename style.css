@@ -1,5 +1,5 @@
 body {
-    background-color: #efefef;
+    background-color: #f8f8f8;
     color: #1a1a1a;
     line-height: 1.8em;
     -moz-hyphens: auto;
@@ -22,16 +22,13 @@ a {
     color: #1a1a1a;
 }
 /* Top navigation bar */
-div.navbar {
+.navbar {
     border-bottom: 4px solid #415b70;
+    background-color: #efefef;
 }
-div.navbar .navbar-collapse {border-color: #d8bca1;}
-div.navbar li.active>a, div.navbar li>a:hover, div.navbar li>a:focus, div.navbar li.open>a {
+.nav-link.active {background: #d8bca1;}
+.nav-item li.active>a, .nav-item a:hover, .nav-item a:focus, .nav-itme li.open>a{
     background: #d8bca1 !important;
-    outline: 0;
-}
-div.navbar .navbar-toggle {border-color: #d8bca1;}
-div.navbar .navbar-toggle:hover, div.navbar .navbar-toggle:focus {
     outline: 0;
 }
 
@@ -52,7 +49,8 @@ div.navbar .navbar-toggle:hover, div.navbar .navbar-toggle:focus {
 .jumbotron {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 4px 0px 4px;
+    padding: 40px 4px 0px 4px;
+    background-color: #f8f8f8;
 }
 .jumbotron > .title {
     font-size: 18pt;
@@ -61,7 +59,7 @@ div.navbar .navbar-toggle:hover, div.navbar .navbar-toggle:focus {
     text-align: center;
 }
 
-.abstract{
+.content{
     padding: 20px 0px 0px 0px;
     margin: 0px auto;
     text-align: justify;
@@ -70,8 +68,13 @@ div.navbar .navbar-toggle:hover, div.navbar .navbar-toggle:focus {
 
 .row {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0px 0px 0px 0px;
     padding: 10px 4px 0px 4px;
+}
+
+.row a {
+    font-size: 12pt;
+    padding: 2px auto;
 }
 
 .thumbnail {
@@ -80,8 +83,9 @@ div.navbar .navbar-toggle:hover, div.navbar .navbar-toggle:focus {
 }
 
 .thumbnail img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .caption {

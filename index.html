@@ -8,44 +8,43 @@
         <meta name="author" content="Despoina Paschalidou">
         <meta name="description" content="Workshop page for ai3dcc">
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="style.css?cache=77333914184988801948">
         <link rel="icon" type="image/png" href="figures/favicon.png"/>
     </head>
     <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-             <div class="container-fluid">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="https://iccv2023.thecvf.com/">AI3DCC @ ICCV2023</a>
-               </div>
-
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#home">Home</span></a></li>
-                   <li><a href="#submission">Submission</a></li>
-                   <li><a href="#schedule">Schedule</a></li>
-                   <li><a href="#speakers">Speakers</a></li>
-                   <li><a href="#">Program Comittee</a></li>
-                   <li><a href="#organizers">Organizers</a></li>
-                 </ul>
-               </div><!-- /.navbar-collapse -->
-             </div><!-- /.container-fluid -->
-        </div>
+        <nav id="navbar-top" class="navbar fixed-top navbar-light px-3">
+            <a class="navbar-brand" href="https://iccv2023.thecvf.com/">AI3DCC @ ICCV2023</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#submission">Submission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedule">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program Comittee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#organizers">Organizers</a>
+              </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <div class="jumbotron" id="home">
             <div class="title">
                 <h4>The first workshop on</h4>
                 <h2>AI for 3D Content Creation</h2>
                 <h4>October @ ICCV 2023 Paris, France</h4>
             </div>
-            <div class="abstract">
+            <div class="content">
             Developing algorithms capable of generating realistic, high
             quality 3D data at scale has been a long standing problem in
             Computer Vision and Graphics. We anticipate that having generative
@@ -69,21 +68,76 @@
             recently has the research community shifted their attention towards generating
             meaningful dynamics and interactions between humans or humans and other scene
             elements. To this end, in our workshop we look forward to cover the following
-            topics: (i) What is the best representation for generating meaningful
-            variations of 3D objects with texture and high quality details?, (ii) What is
-            the best representation to enable intuitive control over the generated
-            objects?, (iii) How to synthesize realistic humans performing plausible
-            actions? (iv) How to generate fully controllable 3D environments, where it
+            topics:
+            <ul>
+                <li>What is the best representation for generating meaningful
+            variations of 3D objects with texture and high quality details?</li>
+                <li> What is the best representation to enable intuitive control over the generated
+            objects? </li>
+                <li> How to synthesize realistic humans performing plausible
+            actions? </li>
+                <li> How to generate fully controllable 3D environments, where it
             would be possible to manipulate both the appearance of the scene elements as
-            well as their spatial composition? (v) What is the best representation for
+            well as their spatial composition? </li>
+                <li> What is the best representation for
             generating plausible dynamics and interactions between humans or humans and
-            objects? and (vi) What are the ethical implications that arise from
-            artificially generated 3D content and how we can address them.
+            objects? </li>
+                <li> What are the ethical implications that arise from
+            artificially generated 3D content and how we can address them. </li>
+            </ul>
             </div>
         </div>
         <div class="section">
+        <div class="title">
+            <span>News</span>
+        </div>
+        <div class="section">
         <div class="title" id="submission">
-            <span>Submission</span>
+            <span>Call for Papers</span>
+        </div>
+        <div class="content">
+        <p>We accept both archival and non-archival paper submissions. The
+        accepted archival papers will be included in the ICCV2023 conference
+        proceedings, while the non-archival ones will just be presented in the
+        workshop. We welcome papers that are already accepted to the ICCV main
+        conference or other previous conferences. These works will be included
+        in the non-archival paper track. Every accepted paper will have the
+        opportunity to host a poster presentation at the workshop.</p>
+
+        We accept two forms of papers:
+        <ul>
+            <li><strong>Long paper:</strong> Long papers should not exceed 8
+            pages excluding references and should use the
+            <a href=https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php> official ICCV
+            template</a>. Long papers are for presenting mature works. A long paper
+            should not only describe novel ideas but also have full experiments
+            and analyses to support the proposed ideas.
+            </li>
+            <li><strong>Short paper:</strong> Short papers should not exceed 4
+            pages excluding references and should use the <a href=https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php>
+            official ICCV template</a>. Short papers are intended for presenting early stage
+            ideas. Although comprehensive analyses and experiments are not
+            necessary for short papers, they should have some basic experiments
+            to support the key idea. Moreover, in the short paper track, we
+            encourage submissions focusing on creative contributions
+            demonstrating applications of existing technology into 3D content
+            creation pipelines. In particular, we encourage submissions
+            showcasiung how the ongoing research on 3D content creation can be
+            used to faciliate the workflow of various fields such as
+            architectural engineering, product designing etc.</li>
+        </ul>
+
+        <p>All submissions should anonymized. Papers with more than 4 pages
+        (excluding references) will be reviewed as long papers, and papers with
+        more than 8 pages (excluding references) will be rejected without
+        review. Supplementary material is allowed in a single PDF
+        or ZIP format. All papers that were not previously presented in a major conference,
+        will be peer-reviewed by three experts in the
+        field in a double-blind manner. In case you are submitting a 
+        previously accepted to conferences, please attach a copy of the paper
+        acceptance notification email at the end of submission PDF.</p>
+
+        <p><strong>Submission Website:<strong> TBD</p>
         </div>
         </div>
         <div class="section">
@@ -108,7 +162,7 @@
           </div>
             <div class="col-xs-6 col-md-3">
                 <a href="https://geopavlakos.github.io/" class="thumbnail">
-                <img src="gfx/organizers/georgios_pavlakos.jpg" alt="Georgios Pavlakos">
+                <img src="gfx/organizers/georgios_pavlakos.jpg" style="object-position: 1px 0px;" alt="Georgios Pavlakos">
                 </a>
           </div>
           <div class="col-xs-6 col-md-3">
@@ -122,29 +176,28 @@
                 </a>
           </div>
         </div>
-
         <div class="row">
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://paschalidoud.github.io/">Despoina Paschalidou<br>
-                    <p style="font-size: 12pt;">Stanford</p></a></div>
+                    <p style="font-size: 11pt;">Stanford</p></a></div>
           </div>
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://geopavlakos.github.io/">Georgios Pavlakos<br>
-                <p style="font-size: 12pt;">UC Berkeley</p></a></div>
+                <p style="font-size: 11pt;">UC Berkeley</p></a></div>
           </div>
           <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://amlankar.github.io/">Amlan Kar<br>
-                <p style="font-size: 12pt;">University of Toronto and NVIDIA</p></a></div>
+                <p style="font-size: 11pt;">University of Toronto and NVIDIA Research</p></a></div>
           </div>
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://kaichun-mo.github.io/">Kaichun Mo<br>
-                <p style="font-size: 12pt;">NVIDIA</p></a></div>
+                <p style="font-size: 11pt;">NVIDIA Research</p></a></div>
           </div>
         </div>
         <div class="row">
             <div class="col-xs-6 col-md-3">
                 <a href="https://davrempe.github.io/" class="thumbnail">
-                <img src="gfx/organizers/davis_rempe.jpg" alt="Davis Rempe">
+                <img src="gfx/organizers/davis_rempe.jpg" style="object-position: 1px 0px;" alt="Davis Rempe">
                 </a>
           </div>
             <div class="col-xs-6 col-md-3">
@@ -159,37 +212,35 @@
           </div>
           <div class="col-xs-6 col-md-3">
                 <a href="https://geometry.stanford.edu/member/guibas/" class="thumbnail">
-                <img src="gfx/organizers/leonidas_guibas.jpg" alt="Leonidas Guibas">
+                <img src="gfx/organizers/leonidas_guibas.jpg" style="object-position: 1px 0px;" alt="Leonidas Guibas">
                 </a>
           </div>
         </div>
         <div class="row">
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://davrempe.github.io/">Davis Rempe<br>
-                <p style="font-size: 12pt;">NVIDIA</p></a></div>
+                <p style="font-size: 11pt;">NVIDIA Research</p></a></div>
           </div>
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://paulguerrero.net/">Paul Guerrero<br>
-                <p style="font-size: 12pt;">Adobe</p></a></div>
+                <p style="font-size: 11pt;">Adobe Research</p></a></div>
           </div>
           <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://vlg.inf.ethz.ch/">Siyu Tang<br>
-                <p style="font-size: 12pt;">ETH Zurich</p></a></div>
+                <p style="font-size: 11pt;">ETH Zurich</p></a></div>
           </div>
             <div class="col-xs-6 col-md-3">
                 <div class=caption><a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas<br>
-                <p style="font-size: 12pt;">Stanford</p></a></div>
+                <p style="font-size: 11pt;">Stanford</p></a></div>
           </div>
         </div>
         </div>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143288088-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        </div>
 
-            gtag('config', 'UA-143288088-1');
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navbar-top'
+            });
         </script>
     </body>
 </html>
