@@ -21,6 +21,10 @@ a {
     text-decoration: none;
     color: #1a1a1a;
 }
+
+th {border-style: hidden !important;}
+td {border-style: hidden !important;}
+
 /* Top navigation bar */
 .navbar {
     border-bottom: 4px solid #415b70;
