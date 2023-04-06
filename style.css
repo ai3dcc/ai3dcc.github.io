@@ -17,10 +17,9 @@ h4 {
     margin: 0px 0px 0px 0px;
 }
 
-a {
-    text-decoration: none;
-    color: #1a1a1a;
-}
+a { color: #1a1a1a; }
+.row a {text-decoration: none;}
+li {font-size: 12pt;}
 
 th {border-style: hidden !important;}
 td {border-style: hidden !important;}
