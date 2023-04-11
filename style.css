@@ -22,6 +22,13 @@ a { color: #1a1a1a; }
 li {font-size: 12pt;}
 
 /* Top navigation bar */
+#navbar-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 .navbar {
     border-bottom: 4px solid #415b70;
     background-color: #efefef;
@@ -34,8 +41,8 @@ li {font-size: 12pt;}
 
 .section {
     max-width: 900px;
-    margin: 10px auto;
-    padding: 40px 4px 0px 4px;
+    margin: -40px auto 10px auto;
+    padding: 80px 4px 0px 4px;
 }
 .section > .title {
     font-size: 18pt;
@@ -84,8 +91,16 @@ li {font-size: 12pt;}
 
 .thumbnail img {
     height: 200px;
-    object-fit: cover;
+    object-fit: scale-down;
     width: 100%;
+}
+@media (min-width: 576px) {
+    .thumbnail img {
+        object-fit: cover;
+    }
+    .thumbnail img.top-left {
+        object-position: 0px 0px;
+    }
 }
 
 .caption {
@@ -94,5 +109,19 @@ li {font-size: 12pt;}
     text-align: center;
     font-size: 14pt;
 }
+.caption span {
+    font-size: 11pt;
+}
 
 .caption a:hover {text-decoration:none;}
+
+table {
+    text-align: left;
+}
+
+.carousel-item {
+    text-align: center;
+}
+.carousel-caption {
+    background: rgba(230, 230, 230, 0.9);
+}
