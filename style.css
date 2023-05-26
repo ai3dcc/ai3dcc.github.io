@@ -17,6 +17,11 @@ h4 {
     margin: 0px 0px 0px 0px;
 }
 
+u {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 a { color: #1a1a1a; }
 .row a {text-decoration: none;}
 li {font-size: 12pt;}
