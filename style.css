@@ -66,8 +66,8 @@ li {font-size: 12pt;}
 }
 .section {
     max-width: 900px;
-    margin: -40px auto 10px auto;
-    padding: 80px 4px 0px 4px;
+    margin: -100px auto 5px auto;
+    padding: 100px 4px 0px 4px;
 }
 .section > .title {
     font-size: 18pt;
@@ -104,7 +104,7 @@ li {font-size: 12pt;}
     padding: 10px 4px 0px 4px;
 }
 
-.row a {
+.row {
     font-size: 12pt;
     padding: 2px auto;
 }
@@ -156,4 +156,43 @@ table {
 }
 .carousel-caption {
     background: rgba(230, 230, 230, 0.9);
+}
+
+.thumbnail ul {
+    display: block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+@media (hover: hover) {
+    .thumbnail div {
+        position: relative;
+        overflow: hidden;
+    }
+    .thumbnail ul {
+        background: rgba(200, 200, 200, 0.7);
+        position: absolute;
+        bottom: -100%;
+        left: 0px;
+        right: 0px;
+        transition: bottom 0.2s ease-in-out;
+    }
+    .thumbnail:hover ul {
+        bottom: 0px;
+    }
+}
+
+.icon {
+    display: inline-block;
+    background-color: #fff2cc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 150%;
+}
+
+.icon:hover {
+    background: #ffe599;
 }
