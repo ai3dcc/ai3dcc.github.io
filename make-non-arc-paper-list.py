@@ -181,6 +181,60 @@ publications = [
             Link("Paper", "https://arxiv.org/pdf/2307.03869.pdf", None, None),
         ]
     ),
+
+    Paper(
+        "Locomotion-Action-Manipulation: Synthesizing Human-Scene Interactions in Complex 3D Environments",
+        "https://jiyewise.github.io/projects/LAMA/",
+        author_list("Jiye Lee; Hanbyul Joo"),
+        [   Link("Abstract", None, "Synthesizing interaction-involved human motions has been challenging due to the high complexity of 3D environments and the diversity of possible human behaviors within. We present LAMA, Locomotion-Action-MAnipulation, to synthesize natural and plausible long term human movements in complex indoor environments. The key motivation of LAMA is to build a unified framework to encompass a series of everyday motions including locomotion, scene interaction, and object manipulation. Unlike existing methods that require motion data ''paired'' with scanned 3D scenes for supervision, we formulate the problem as a test-time optimization by using human motion capture data only for synthesis. LAMA leverages a reinforcement learning framework coupled with motion matching algorithm for optimization, and further exploits a motion editing framework via manifold learning to cover possible variations in interaction and manipulation. Throughout extensive experiments, we demonstrate that LAMA outperforms previous approaches in synthesizing realistic motions in various challenging scenarios.", None),
+            Link("Paper", "https://arxiv.org/pdf/2301.02667.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "Diffusion-based Generation, Optimization, and Planning in 3D Scenes",
+        "https://scenediffuser.github.io/",
+        author_list("Siyuan Huang; Zan Wang; Puhao Li; Baoxiong Jia; Tengyu Liu; Yixin Zhu; Wei Liang; Song-Chun Zhu"),
+        [   Link("Abstract", None, "We introduce the SceneDiffuser, a conditional generative model for 3D scene understanding. SceneDiffuser provides a unified model for solving scene-conditioned generation, optimization, and planning. In contrast to prior work, SceneDiffuser is intrinsically scene-aware, physics-based, and goal-oriented. With an iterative sampling strategy, SceneDiffuser jointly formulates the scene-aware generation, physics-based optimization, and goal-oriented planning via a diffusion-based denoising process in a fully differentiable fashion. Such a design alleviates the discrepancies among different modules and the posterior collapse of previous scene-conditioned generative models. We evaluate the SceneDiffuser on various 3D scene understanding tasks, including human pose and motion generation, dexterous grasp generation, path planning for 3D navigation, and motion planning for robot arms. The results show significant improvements compared with previous models, demonstrating the tremendous potential of the SceneDiffuser for the broad community of 3D scene understanding.", None),
+            Link("Paper", "https://arxiv.org/pdf/2301.06015.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "Text-driven Human Avatar Generation by Neural Re-parameterized Texture Optimization",
+        "",
+        author_list("Kim Youwang; Tae-Hyun Oh"),
+        [   Link("Abstract", None, "We present TexAvatar, a text-driven human texture generation system for creative human avatar synthesis. Despite the huge progress in text-driven human avatar generation methods, modeling high-quality, efficient human appearance remains challenging. With our proposed neural re-parameterized texture optimization, TexAvatar generates a high-quality UV texture in 30 minutes, given only a text description. The generated UV texture can be easily superimposed on animatable human meshes without further processing. This is distinctive in that prior works generate volumetric textured avatars that require cumbersome rigging processes to animate. We demonstrate that TexAvatar produces human avatars with favorable quality, with faster speed, compared to recent competing methods.", None),
+            Link("Paper", "/papers/0042_camready.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "InterDiff: Forecasting 3D Human-Object Interaction with Physics-Informed Diffusion",
+        "https://sirui-xu.github.io/InterDiff/",
+        author_list("Sirui Xu; Zhengyuan Li; Yu-Xiong Wang; Liangyan Gui"),
+        [   Link("Abstract", None, "This paper addresses the task of anticipating 3D human-object interactions (HOIs). Previous research has either ignored object dynamics or lacked whole-body interaction being limited to grasping small objects. Our task is challenging, as it requires modeling dynamic objects with various shapes, whole-body motion, and ensuring physically valid interaction. To this end, we propose InterDiff, a framework comprising two key steps: (i) interaction diffusion, where we leverage a diffusion model to capture the distribution of future human-object interactions; (ii) interaction correction, where we introduce a physics-informed predictor via coordinate transformations to correct for denoised HOIs in a diffusion step. Our key insight is to inject prior knowledge that the interactions under reference with respect to the contact points follow a simple pattern and are easily predictable. Experiments on large-scale human motion datasets demonstrate the effectiveness of our method for the new task, capable of producing realistic, vivid, and remarkably long-term 3D HOI predictions.", None),
+            Link("Paper", "https://arxiv.org/pdf/2308.16905.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "Locally Stylized Neural Radiance Fields",
+        "",
+        author_list("Hong Wing Pang; Binh-Son Hua; Sai-Kit Yeung"),
+        [   Link("Abstract", None, "In recent years, there has been increasing interest in applying stylization on 3D scenes from a reference style image, in particular onto neural radiance fields (NeRF). While performing stylization directly on NeRF guarantees appearance consistency over arbitrary novel views, it is a challenging problem to guide the transfer of patterns from the style image onto different parts of the NeRF scene. In this work, we propose a stylization framework for NeRF based on local style transfer. In particular, we use a hash-grid encoding to learn the embedding of the appearance and geometry components, and show that the mapping defined by the hash table allows us to control the stylization to a certain extent. Stylization is then achieved by optimizing the appearance branch while keeping the geometry branch fixed. To support local style transfer, we propose a new loss function that utilizes a segmentation network and bipartite matching to establish region correspondences between the style image and the content images obtained from volume rendering. Our experiments show that our method yields plausible stylization results with novel view synthesis while having flexible controllability via manipulating and customizing the region correspondences.", None),
+            Link("Paper", "", None, None),
+        ]
+    ),
+
+    Paper(
+        "ContactGen: Generative Contact Modeling for Grasp Generation",
+        "",
+        author_list("Shaowei Liu; Yang Zhou; Jimei Yang"),
+        [   Link("Abstract", None, "This paper presents a novel object-centric contact representation ContactGen for hand-object interaction. The ContactGen comprises 3 components: a contact map indicates the contact location, a part map represents the contact hand part, and a direction map tells the contact direction within each part. Given an input object, we propose a conditional generative model to predict ContactGen and adopt model-based optimization to predict diverse and geometrically feasible grasps. Experimental results demonstrate our method can generate high-fidelity and diverse human grasps for various objects.", None),
+            Link("Paper", "", None, None),
+        ]
+    ),
 ]
 
 
