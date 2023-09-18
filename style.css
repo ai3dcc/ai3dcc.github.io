@@ -193,3 +193,74 @@ table {
 .col-button {
     margin-top: -40px;
 }
+#footer {
+    margin-top: 50px;
+}
+
+/**
+ * Styling for the publication list
+ */
+.title {
+   margin-bottom: 0px;
+}
+.paper-title {
+    padding-top: 2.5%;
+    font-size: 14pt;
+    color: #818181;
+    font-weight: bold;
+}
+.paper-title a {color: #000;}
+.paper-title a:hover {color: #777;}
+.paper {
+    text-align: left;
+    counter-increment: paper-counter 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.paper .links {text-align: left;}
+.paper .links a:first-child { margin-left: 0px; }
+.paper .links a {
+    display: inline-block;
+    width: 90px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    padding: 1px 6px;
+    padding-bottom: 0px;
+    background-color: #0081af;
+    color: white;
+    text-align: center;
+}
+.paper .links a:hover {
+    pointer: cursor;
+    color: #1A2B7E;
+}
+.paper .links a[data-type="Abstract"] {
+    #background-color: #fc9d38;
+}
+.paper .links a[data-type="Paper"] {
+    #background-color: #3492eb;
+}
+.paper .links a[data-type="Poster"] {
+    #background-color: #c2c2ba;
+}
+
+.paper .links .link-content {
+    display: none;
+    font-style: italic;
+    margin-top: 10px;
+}
+.paper .links .link-content > pre {
+    font-style: normal;
+    line-height: 1.2em;
+}
+.paper:before {
+    display: inline-block;
+    width: 40px;
+    padding-top: 22px;
+    content: counter(paper-counter);
+}
+.paper .content {
+    display: inline-block;
+    width: calc(100% - 40px);
+    padding-top: 0px;
+}
