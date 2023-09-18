@@ -135,6 +135,43 @@ publications = [
             Link("Paper", "https://arxiv.org/pdf/2303.08133.pdf", None, None),
         ]
     ),
+
+    Paper(
+        "NCHO: Unsupervised Learning for Neural 3D Composition of Humans and Objects",
+        "https://taeksuu.github.io/ncho/",
+        author_list("Taeksoo Kim; Shunsuke Saito; Hanbyul Joo"),
+        [   Link("Abstract", None, "Deep generative models have been recently extended to synthesizing 3D digital humans. However, previous approaches treat clothed humans as a single chunk of geometry without considering the compositionality of clothing and accessories. As a result, individual items cannot be naturally composed into novel identities, leading to limited expressiveness and controllability of generative 3D avatars. While several methods attempt to address this by leveraging synthetic data, the interaction between humans and objects is not authentic due to the domain gap, and manual asset creation is difficult to scale for a wide variety of objects. In this work, we present a novel framework for learning a compositional generative model of humans and objects (backpacks, coats, scarves, and more) from real-world 3D scans. Our compositional model is interaction-aware, meaning the spatial relationship between humans and objects, and the mutual shape change by physical contact is fully incorporated. The key challenge is that, since humans and objects are in contact, their 3D scans are merged into a single piece. To decompose them without manual annotations, we propose to leverage two sets of 3D scans of a single person with and without objects. Our approach learns to decompose objects and naturally compose them back into a generative human model in an unsupervised manner. Despite our simple setup requiring only the capture of a single subject with objects, our experiments demonstrate the strong generalization of our model by enabling the natural composition of objects to diverse identities in various poses and the composition of multiple objects, which is unseen in training data." , None),
+            Link("Paper", "https://arxiv.org/pdf/2305.14345.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "Chupa : Carving 3D Clothed Humans from Skinned Shape Priors using 2D Diffusion Probabilistic Models",
+        "https://snuvclab.github.io/chupa/",
+        author_list("Byungjun Kim; Patrick Kwon; Kwangho Lee; Myunggi Lee; Sookwan Han; Daesik Kim; Hanbyul Joo"),
+        [   Link("Abstract", None, "We propose a 3D generation pipeline that uses diffusion models to generate realistic human digital avatars. Due to the wide variety of human identities, poses, and stochastic details, the generation of 3D human meshes has been a challenging problem. To address this, we decompose the problem into 2D normal map generation and normal map-based 3D reconstruction. Specifically, we first simultaneously generate realistic normal maps for the front and backside of a clothed human, dubbed dual normal maps, using a pose-conditional diffusion model. For 3D reconstruction, we ``carve'' the prior SMPL-X mesh to a detailed 3D mesh according to the normal maps through mesh optimization. To further enhance the high-frequency details, we present a diffusion resampling scheme on both body and facial regions, thus encouraging the generation of realistic digital avatars. We also seamlessly incorporate a recent text-to-image diffusion model to support text-based human identity control. Our method, namely, Chupa, is capable of generating realistic 3D clothed humans with better perceptual quality and identity variety." , None),
+            Link("Paper", "https://arxiv.org/pdf/2305.11870.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "CoRF : Colorizing Radiance Fields using Knowledge Distillation",
+        "https://arxiv.org/abs/2309.07668",
+        author_list("Ankit Dhiman; Srinath R; SrinjaySoumitra Sarkar; Lokesh Boregowda; Venkatesh Babu RADHAKRISHNAN"),
+        [   Link("Abstract", None, "Neural radiance field (NeRF) based methods enable high-quality novel-view synthesis for multi-view images. This work presents a method for synthesizing colorized novel views from input grey-scale multi-view images. When we apply image or video-based colorization methods on the generated grey-scale novel views, we observe artifacts due to inconsistency across views. Training a radiance field network on the colorized grey-scale image sequence also does not solve the 3D consistency issue. We propose a distillation based method to transfer color knowledge from the colorization networks trained on natural images to the radiance field network. Specifically, our method uses the radiance field network as a 3D representation and transfers knowledge from existing 2D colorization methods. The experimental results demonstrate that the proposed method produces superior colorized novel views for indoor and outdoor scenes while maintaining cross-view consistency than baselines. Further, we show the efficacy of our method on applications like colorization of radiance field network trained from 1.) Infra-Red (IR) multi-view images and 2.) Old grey-scale multi-view image sequences." , None),
+            Link("Paper", "https://arxiv.org/pdf/2309.07668.pdf", None, None),
+        ]
+    ),
+
+    Paper(
+        "CC3D: Layout-Conditioned Generation of Compositional 3D Scenes",
+        "https://sherwinbahmani.github.io/cc3d/",
+        author_list("Sherwin Bahmani; Jeong Joon Park; Despoina Paschalidou; Xingguang Yan; Gordon Wetzstein; Leonidas Guibas; Andrea Tagliasacchi"),
+        [   Link("Abstract", None, "Recent years have seen significant progress in training 3D-aware image generators from unstructured image collections. In this work, we introduce CC3D, a conditional generative model that synthesizes complex 3D scenes conditioned on 2D semantic scene layouts. Different from most existing 3D GANs that limit their applicability to aligned single objects, we focus on generating complex 3D scenes with multiple objects, by modeling the compositional nature of 3D scenes. By devising a 2D layout-based approach for 3D synthesis and implementing a new 3D field representation with a stronger geometric inductive bias, we have created a 3D-GAN that is both efficient and of high quality, while allowing for a more controllable generation process. Our evaluations on synthetic 3D-FRONT and real-world KITTI-360 datasets demonstrate that our model generates scenes of improved visual and geometric quality in comparison to previous works." , None),
+            Link("Paper", "https://arxiv.org/pdf/2303.12074.pdf", None, None),
+            Link("Poster", "posters/cc3d_poster_iccv3.pdf", None, None),
+        ]
+    ),
 ]
 
 
