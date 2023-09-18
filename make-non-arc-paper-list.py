@@ -172,6 +172,15 @@ publications = [
             Link("Poster", "posters/cc3d_poster_iccv3.pdf", None, None),
         ]
     ),
+
+    Paper(
+        "Sketch-A-Shape: Zero-Shot Sketch-to-3D Shape Generation",
+        "https://arxiv.org/abs/2307.03869",
+        author_list("Aditya Sanghi ; Pradeep Kumar Jayaraman; Arianna Rampini; Joseph G Lambourne; Hooman Shayani; Evan Atherton; Saeid Asgari Taghanaki"),
+        [   Link("Abstract", None, "Significant progress has been made in using large pre-trained models for creative applications in 3D vision, such as text-to-shape generation. However, generating 3D shapes from sketches remains challenging due to the limited availability of paired datasets linking sketches to corresponding 3D shapes, as well as variations in sketch abstraction levels. To address this challenge, we propose a solution: conditioning a 3D generative model on features extracted from a frozen pre-trained vision model, specifically using features obtained from synthetic renderings during training. This approach enables the effective generation of 3D shapes from sketches at inference time, demonstrating that the pre-trained model features carry semantic signals that are resilient to domain shifts.In our experiments, we validate the effectiveness of our method by showing that it can generate multiple 3D shapes per input sketch, regardless of the sketch's level of abstraction. Importantly, our technique achieves this without the need for paired datasets during training.", None),
+            Link("Paper", "https://arxiv.org/pdf/2307.03869.pdf", None, None),
+        ]
+    ),
 ]
 
 
