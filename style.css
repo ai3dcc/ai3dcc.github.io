@@ -200,8 +200,15 @@ table {
 /**
  * Styling for the publication list
  */
-.title {
-   margin-bottom: 0px;
+
+.papers-title {
+    font-size: 18pt;
+    color: #414446;
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #999;
+    padding-right: 15px;
 }
 .paper-title {
     padding-top: 2.5%;
