@@ -36,11 +36,12 @@ def author_list(authors):
 
 publications = [
     Paper(
-        "Looking at words and points with attention: a benchmark for text-to-shape coherence",
+        "Looking at Words and Points with Attention: a Benchmark for Text-to-Shape Coherence",
         "https://arxiv.org/abs/2309.07917",
         author_list("Andrea Amaduzzi; Giuseppe Lisanti; Samuele Salti; Luigi Di Stefano"),
         [   Link("Abstract", None, "While text-conditional 3D object generation and manipulation have seen rapid progress, the evaluation of coherence between generated 3D shapes and input textual descriptions lacks a clear benchmark. The reason is twofold: a) the low quality of the textual descriptions in the only publicly available dataset of text-shapes pairs; b) the limited effectiveness of the metrics used to quantitatively assess such coherence. In this paper, we propose a comprehensive solution that addresses both weaknesses. Firstly, we employ large language models to automatically refine textual descriptions associated with shapes. Secondly, we propose a quantitative metric to assess text-to-shape coherence, through cross-attention mechanism. To validate our approach, we conduct a human study and compare quantitatively our metric with existing ones. The refined dataset, the new metric and a set of text-shape pairs validated by the human study comprise a novel, fine-grained benchmark that we publicly release to foster research on text-to-shape coherence of text-conditioned 3D generative models.", None),
             Link("Paper", "https://arxiv.org/pdf/2309.07917.pdf", None, None),
+            Link("Poster", "posters/full_poster_Andrea_Amaduzzi.pdf", None, None),
         ]
     ),
 
