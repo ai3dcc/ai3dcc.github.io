@@ -75,7 +75,7 @@ publications = [
     Paper(
         "3D-aware Blending with Generative NeRFs",
         "https://blandocs.github.io/blendnerf",
-        author_list("Hyunsu Kim; Gayoung Lee; Yunjey Choi; Jin-Hwa Kim); Jun-Yan Zhu"),
+        author_list("Hyunsu Kim; Gayoung Lee; Yunjey Choi; Jin-Hwa Kim; Jun-Yan Zhu"),
         [   Link("Abstract", None, "Image blending aims to combine multiple images seamlessly. It remains challenging for existing 2D-based methods, especially when input images are misaligned due to differences in 3D camera poses and object shapes. To tackle these issues, we propose a 3D-aware blending method using generative Neural Radiance Fields (NeRF), including two key components: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we first estimate the camera pose of the reference image with respect to generative NeRFs and then perform pose alignment for objects. To further leverage 3D information of the generative NeRF, we propose 3D-aware blending that utilizes volume density and blends on the NeRF's latent space, rather than raw pixel space.", None),
             Link("Paper", "https://arxiv.org/pdf/2302.06608.pdf", None, None),
             Link("Poster", "posters/blendnerf_poster_workshop.pdf", None, None),
