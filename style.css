@@ -271,3 +271,20 @@ table {
     width: calc(100% - 40px);
     padding-top: 0px;
 }
+
+.keynote {
+    background-color: #ffdb99;
+}
+
+.spotlight {
+    background-color: #6bb36c;
+}
+
+.challenge {
+    background-color: #68ACD6;
+}
+
+td:first-child {
+    text-align: right;
+    width: 140px;
+}
