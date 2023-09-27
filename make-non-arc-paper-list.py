@@ -99,6 +99,7 @@ publications = [
         author_list("Juil Koo; Seungwoo Yoo; Hieu Minh Nguyen; Minhyuk Sung"),
         [   Link("Abstract", None, "We present a cascaded diffusion model based on a part-level implicit 3D representation. Our model achieves state-of-the-art generation quality and also enables part-level shape editing and manipulation without any additional training in conditional setup. Diffusion models have demonstrated impressive capabilities in data generation as well as zero-shot completion and editing via a guided reverse process. Recent research on 3D diffusion models has focused on improving their generation capabilities with various data representations, while the absence of structural information has limited their capability in completion and editing tasks. We thus propose our novel diffusion model using a part-level implicit representation. To effectively learn diffusion with high-dimensional embedding vectors of parts, we propose a cascaded framework, learning diffusion first on a low-dimensional subspace encoding extrinsic parameters of parts and then on the other high-dimensional subspace encoding intrinsic attributes. In the experiments, we demonstrate the outperformance of our method compared with the previous ones both in generation and part-level completion and manipulation tasks." , None),
             Link("Paper", "https://arxiv.org/pdf/2303.12236.pdf", None, None),
+            Link("Poster", "posters/SALAD-portrait.pdf", None, None),
         ]
     ),
 
@@ -117,6 +118,7 @@ publications = [
         author_list("Ying-Tian Liu; Yuan-Chen Guo; Vikram Voleti; Ruizhi Shao; Chia-Hao Chen; Guan Luo; Zixin Zou; Chen Wang; Christian Laforte; Yan-Pei Cao; Song-Hai Zhang"),
         [   Link("Abstract", None, "We introduce threestudio, an open-source, unified, and modular framework specifically designed for 3D content generation. This framework extends diffusion-based 2D image generation models to 3D generation guidance while incorporating conditions such as text and images. We delineate the modular architecture and design of each component within threestudio. Moreover, we re-implement state-of-the-art methods for 3D generation within threestudio, presenting comprehensive comparisons of their design choices. This versatile framework has the potential to empower researchers and developers to delve into cutting-edge techniques for 3D generation, and presents the capability to facilitate further applications beyond 3D generation." , None),
             Link("Paper", "https://cg.cs.tsinghua.edu.cn/threestudio/ICCV2023_AI3DCC_threestudio.pdf", None, None),
+            Link("Poster", "posters/threestudio_poster.pdf", None, None),
         ]
     ),
 
@@ -153,6 +155,7 @@ publications = [
         author_list("Byungjun Kim; Patrick Kwon; Kwangho Lee; Myunggi Lee; Sookwan Han; Daesik Kim; Hanbyul Joo"),
         [   Link("Abstract", None, "We propose a 3D generation pipeline that uses diffusion models to generate realistic human digital avatars. Due to the wide variety of human identities, poses, and stochastic details, the generation of 3D human meshes has been a challenging problem. To address this, we decompose the problem into 2D normal map generation and normal map-based 3D reconstruction. Specifically, we first simultaneously generate realistic normal maps for the front and backside of a clothed human, dubbed dual normal maps, using a pose-conditional diffusion model. For 3D reconstruction, we ``carve'' the prior SMPL-X mesh to a detailed 3D mesh according to the normal maps through mesh optimization. To further enhance the high-frequency details, we present a diffusion resampling scheme on both body and facial regions, thus encouraging the generation of realistic digital avatars. We also seamlessly incorporate a recent text-to-image diffusion model to support text-based human identity control. Our method, namely, Chupa, is capable of generating realistic 3D clothed humans with better perceptual quality and identity variety." , None),
             Link("Paper", "https://arxiv.org/pdf/2305.11870.pdf", None, None),
+            Link("Poster", "posters/chupa_poster.pdf", None, None),
         ]
     ),
 
@@ -223,10 +226,11 @@ publications = [
 
     Paper(
         "Locally Stylized Neural Radiance Fields",
-        "#",
+        "https://arxiv.org/abs/2309.10684",
         author_list("Hong Wing Pang; Binh-Son Hua; Sai-Kit Yeung"),
         [   Link("Abstract", None, "In recent years, there has been increasing interest in applying stylization on 3D scenes from a reference style image, in particular onto neural radiance fields (NeRF). While performing stylization directly on NeRF guarantees appearance consistency over arbitrary novel views, it is a challenging problem to guide the transfer of patterns from the style image onto different parts of the NeRF scene. In this work, we propose a stylization framework for NeRF based on local style transfer. In particular, we use a hash-grid encoding to learn the embedding of the appearance and geometry components, and show that the mapping defined by the hash table allows us to control the stylization to a certain extent. Stylization is then achieved by optimizing the appearance branch while keeping the geometry branch fixed. To support local style transfer, we propose a new loss function that utilizes a segmentation network and bipartite matching to establish region correspondences between the style image and the content images obtained from volume rendering. Our experiments show that our method yields plausible stylization results with novel view synthesis while having flexible controllability via manipulating and customizing the region correspondences.", None),
-            Link("Paper", "#", None, None),
+            Link("Paper", "https://arxiv.org/pdf/2309.10684.pdf", None, None),
+            Link("Poster", "posters/nerf_stylization_poster.pdf", None, None),
         ]
     ),
 
