@@ -70,6 +70,7 @@ publications = [
         author_list("Minjung Shin; Yunji Seo; Jeongmin Bae; Young Sun Choi; Hyunsu Kim; Hyeran Byun; Youngjung Uh"),
         [   Link("Abstract", None, "3D-aware GANs aim to synthesize realistic 3D scenes that can be rendered in arbitrary camera viewpoints, generating high-quality images with well-defined geometry. As 3D content creation becomes more popular, the ability to generate foreground objects separately from the background has become a crucial property. Existing methods have been developed regarding overall image quality, but they can not generate foreground objects only and often show degraded 3D geometry. In this work, we propose to represent the background as a spherical surface for multiple reasons inspired by computer graphics. Our method naturally provides foreground-only 3D synthesis facilitating easier 3D content creation. Furthermore, it improves the foreground geometry of 3D-aware GANs and the training stability on datasets with complex backgrounds.", None),
             Link("Paper", "https://arxiv.org/pdf/2301.09091.pdf", None, None),
+            Link("Poster", "posters/ballgan_workshop.pdf", None, None),
         ]
     ),
 
