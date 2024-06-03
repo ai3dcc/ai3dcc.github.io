@@ -1,0 +1,835 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>AI3DCC: Workshop on AI for 3D Content Creation</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Despoina Paschalidou">
+        <meta name="description" content="Workshop page for ai3dcc">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css?cache=77333914184988801948">
+        <link rel="icon" type="image/png" href="figures/favicon.png"/>
+    </head>
+    <body>
+        <div id="navbar-top">
+        <nav class="navbar navbar-light px-3">
+            <a class="navbar-brand" href="https://iccv2023.thecvf.com/">AI3DCC @ ICCV2023</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#submission">Submission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#schedule">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="accepted_papers.html">
+                Accepted Papers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#speakers">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="program_committee.html">
+                Program Committee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#organizers">Organizers</a>
+              </li>
+            </ul>
+        </nav>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div class="jumbotron" id="home">
+            <div class="title">
+                <h4>The first workshop on</h4>
+                <h2>AI for 3D Content Creation</h2>
+                <h4>Room S06 - Oct. 2nd Monday Full Day, @ICCV2023 Paris, France</h4>
+                <h4>Remote attendees can join via <u><a href="https://stanford.zoom.us/j/95263783114?pwd=Wk80clR0RXF2NTR4VEhHRGNwTmdKZz09">zoom</a></u>!</h4>
+            </div>
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/dreamfusion.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>DreamFusion: Text-to-3D using 2D Diffusion</h5>
+                        <p>ICLR 2023</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/magic3d.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Magic3D: High-Resolution Text-to-3D Content Creation</h5>
+                        <p>CVPR 2023</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/get3d.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images</h5>
+                        <p>NeurIPS 2022</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/lion.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>LION: Latent Point Diffusion Models for 3D Shape Generation</h5>
+                        <p>NeurIPS 2022</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/instruct-nerf2nerf.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Instruct-NeRF2NeRF Editing 3D Scenes with Instructions</h5>
+                        <p>arxiv 2023</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/atiss_synthesis.webm" type="video/webm">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>ATISS: Autoregressive Transformers for Indoor Scene Synthesis</h5>
+                        <p>NeurIPS 2021</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/infinite-nature.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>InfiniteNature-Zero Learning Perpetual View Generation of Natural Scenes from Single Images</h5>
+                        <p>ECCV 2022</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <video autoplay muted loop height="500">
+                        <source src="gfx/carousel/trace_and_pace.mp4" type="video/mp4">
+                      </video>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Trace and Pace: Controllable Pedestrian Animation
+                            via Guided Trajectory Diffusion</h5>
+                        <p>CVPR 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+            <div class="content"><div class="row"><div class="col">
+            <p>
+            Developing algorithms capable of generating realistic, high
+            quality 3D data at scale has been a long standing problem in
+            Computer Vision and Graphics. We anticipate that having generative
+            models that can reliably synthesize meaningful 3D content will
+            completely revolutionize the workflow of artists and content
+            creators, and will also enable new levels of creativity through
+            ``generative art". Although recently there has been considerable
+            success in generating photorealistic images, the quality and
+            generality of 3D generative models has lagged behind
+            their 2D counterparts. Additionally, efficiently controlling what
+            needs to be generated and scaling these approaches to complex
+            scenes with several static and dynamic objects still remains an
+            open challenge.
+            </p>
+            <p>
+            In this workshop, we seek to bring together researchers working on generative
+            models for 3D shapes, humans, and scenes to discuss the latest
+            advances, existing limitations and next steps towards developing
+            generative pipelines capable of producing fully controllable 3D
+            environments with multiple humans interacting with each other or
+            with objects in the scene. In the last few years, there has been
+            significant progress in generating 3D objects, humans, and scenes
+            independently, but only recently has the research community shifted
+            their attention towards generating meaningful dynamics and
+            interactions between humans or humans and other scene elements. To
+            this end, in our workshop we look forward to cover the following
+            topics:
+            <ul>
+                <li>What is the best representation for generating meaningful
+            variations of 3D objects with texture and high quality details?</li>
+                <li> What is the best representation to enable intuitive control over the generated
+            objects? </li>
+                <li> How to synthesize realistic humans performing plausible
+            actions? </li>
+                <li> How to generate fully controllable 3D environments, where it
+            would be possible to manipulate both the appearance of the scene elements as
+            well as their spatial composition? </li>
+                <li> What is the best representation for
+            generating plausible dynamics and interactions between humans or humans and
+            objects? </li>
+                <li> What are the ethical implications that arise from
+            artificially generated 3D content and how we can address them. </li>
+            </ul>
+            </p>
+            </div></div></div>
+        </div>
+        <div class="section">
+        <div class="title">
+            <span>News</span>
+        </div>
+            <div class="content"><div class="row"><div class="col">
+                <ul>
+                    <li><strong> Oct 1 2023: </strong> Remote attendees can join the workshop through
+                    <u><a href=https://stanford.zoom.us/j/95263783114?pwd=Wk80clR0RXF2NTR4VEhHRGNwTmdKZz09">here</a></u>.
+                    In case there are issues with the link, you can use the
+                    following Meeting ID: 95263783114 and Passcode: 849452 to
+                    join remotely.
+                    </li>
+                    <li><strong> Oct 1 2023: </strong> The <strong>poster session will take place in Room S06</strong>. </li>
+                    <li><strong> Sep 25 2023: </strong>The workshop will take place on <strong>Monday 2nd of October at Room S06!</strong>. For more details please refer
+                    <u><a href=https://iccv2023.thecvf.com/list.of.accepted.workshops-90.php>here</a></u>.
+                    </li>
+                    <li><strong> Sep 18, 2023: </strong>The list of accepted papers have been released!<u><a href="accepted_papers.html"> Check them out!</a></u>
+                    </li>
+                    <li><strong>Aug 2, 2023: </strong> We are hosting the <u><a href="https://omniobject3d.github.io/challenge.html">OmniObject3D Challenge!</a></u>.
+                    The <u><a href="https://codalab.lisn.upsaclay.fr/competitions/14960">submission portal</a></u> is <strong>open until 23:59 UTC, September 15, 2023</strong>!!
+                    <li><strong>July 13, 2023: </strong> We have extended the paper submission deadline by a couple of days!
+                    <strong>The new paper and supplemental material deadline is on July 23 (AoE)!!</strong>. 
+                    </li>
+                    <li><strong>June 7, 2023: </strong>
+                    The paper submission is now <u><a href="https://cmt3.research.microsoft.com/AI3DCC2023">open.</a></u>
+                    </li>
+                    <li><strong>April 3, 2023: </strong>
+                    Workshop website launched, with the tentative list of the
+                    invited speakers announced.</li>
+                </ul>
+            </div></div></div>
+        </div>
+
+        <div class="section" id="schedule">
+            <div class="title">
+                <span>Schedule</span>
+            </div>
+            <div class="content">
+            <p>The workshop will take place on <strong>Monday 2nd of October at Room S06!</strong> For the attendees joining
+            remotely additional details will be provided as soon as possible.
+            Note that all times in the below schedule are in CET.</p>
+
+            <table class="table">
+                <tr>
+                    <td>08:45 - 09:00</td>
+                    <td> </td>
+                    <td>Welcome and Opening Remarks</td>
+                </tr>
+                <tr class="keynote">
+                    <td>09:00 - 09:40</td>
+                    <td>Daniel Ritchie</td>
+                    <td> Neurosymbolic Models for 3D Content Creation</td>
+                </tr>
+                <tr class="keynote">
+                    <td>09:40 - 10:20</td>
+                    <td>Matthew Tancik</td>
+                    <td>NeRFs in Practice: From Tooling to Production</td>
+                </tr>
+                <tr class="spotlight">
+                    <td>10:20 - 10:40</td>
+                    <td>Naureen Mahmood</td>
+                    <td>Keep it SMPL</td>
+                </tr>
+                <tr>
+                    <td>10:40 - 10:55</td>
+                    <td> </td>
+                    <td>Coffee Break <i class="fa fa-coffee"></i>
+                                                 <i class="fa fa-coffee"></i>
+                                                 <i class="fa fa-coffee"></i>
+                    </td>
+                </tr>
+                <tr class="spotlight">
+                    <td>10:55 - 11:15</td>
+                    <td>Chang Kai-Hung</td>
+                    <td>Application of Deep Graph Learning to Architectural Design and Structural Engineering</td>
+                </tr>
+                <tr class="keynote">
+                    <td>11:15 - 11:55</td>
+                    <td>Jiajun Wu</td>
+                    <td> TBD</td>
+                </tr>
+                <tr class="keynote">
+                    <td>11:55 - 12:35</td>
+                    <td>Gul Varol</td>
+                    <td>Is Human Motion a Language without Words?</td>
+                </tr>
+                <tr class="keynote">
+                    <td>12:35 - 13:05</td>
+                    <td>Ben Poole</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>13:15 - 14:10</td>
+                    <td> </td>
+                    <td>Lunch Break <i class="fa fa-cutlery"></i>
+                                    <i class="fa fa-cutlery"></i>
+                                    <i class="fa fa-cutlery"></i>
+
+                    </td>
+                </tr>
+                <tr class="keynote">
+                    <td>14:10 - 14:50</td>
+                    <td>Rana Hanocka</td>
+                    <td>TBD</td>
+                </tr>
+                <tr class="spotlight">
+                    <td>14:50 - 15:10</td>
+                    <td>Terrance de Vries</td>
+                    <td>3D Content Creation in Production at Luma</td>
+                </tr>
+                <tr class="challenge">
+                    <td>15:10 - 15:40</td>
+                    <td> </td>
+                    <td> <a href="https://omniobject3d.github.io/challenge.html">OmniObject3D Challenge</a></td>
+                </tr>
+                <tr>
+                    <td>15:40 - 17:30</td>
+                    <td> </td>
+                    <td> Poster Session</td>
+                </tr>
+                <tr class="spotlight">
+                    <td>17:35 - 17:55</td>
+                    <td>Matt Deitke</td>
+                    <td>Building 3D Foundation Models with Objaverse-XL</td>
+                </tr>
+                <tr>
+                    <td>17:55 - 18:00</td>
+                    <td> </td>
+                    <td>Closing Remarks</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <div class="section" id="submission">
+            <div class="title">
+                <span>Call for Papers</span>
+            </div>
+            <div class="content"><div class="row"><div class="col">
+            <p>We accept both archival and non-archival paper submissions. The
+            accepted archival papers will be included in the ICCV2023 conference
+            proceedings, while the non-archival will only be presented in the
+            workshop. We welcome papers that are already accepted to the ICCV main
+            conference or other previous conferences. These works will be included
+            in the non-archival paper track. Every accepted paper will have the
+            opportunity to host a poster presentation at the workshop.</p>
+
+            We accept two forms of papers:
+            <ul>
+                <li><strong>Long paper:</strong> Long papers should not exceed 8
+                pages excluding references and should use the
+                <u><a href=https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php> official ICCV
+                template</a></u>. Long papers are for presenting mature works. A long paper
+                should not only describe novel ideas but also include extensive
+                experimental evaluations that support the proposed ideas.
+                </li>
+                <li><strong>Short paper:</strong> Short papers should not exceed 4
+                pages excluding references and should also use the
+                <u><a href=https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php>
+                official ICCV template</a></u>. Short papers are intended for presenting
+                ideas that are still at an early stage. Although comprehensive
+                analyses and experiments are not necessary for short papers,
+                they should have some basic experiments to support their
+                claims. Moreover, in the short paper track, we
+                <strong>encourage submissions focusing on creative contributions
+                demonstrating applications of existing technology into 3D content
+                creation pipelines</strong>. For example, we look forward for submissions
+                showcasing how ongoing research on 3D generative AI can be
+                used to facilitate the workflow of experienced as well novice
+                users in various fields such as architectural engineering,
+                product designing, education, art, entertainment etc.</li>
+            </ul>
+
+            <p>All submissions should anonymized. Papers with more than 4 pages
+            (excluding references) will be reviewed as long papers, and papers with
+            more than 8 pages (excluding references) will be rejected without
+            review. Supplementary material is optional with supported formats: pdf, mp4 and zip.
+            All papers that were not previously presented in a major conference,
+            will be peer-reviewed by three experts in the
+            field in a double-blind manner. In case you are submitting a 
+            previously accepted conference paper, please also attach a copy of the
+            acceptance notification email in the supplementary material documents.</p>
+
+            <p style="text-align: left;"><strong>Submission Website:</strong> <a href="https://cmt3.research.microsoft.com/AI3DCC2023">https://cmt3.research.microsoft.com/AI3DCC2023 </a></p>
+            <p style="text-align: left;"><strong>All submissions should follow the ICCV paper format:</strong>
+                <a href=https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php>https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php</a></p>
+            <p><strong>Paper Review Timeline:</strong>
+            <table class="table">
+                <tr>
+                  <th scope="col">Paper Submission and supplemental material deadline</th>
+                  <td>Sunday, July 23, 2023 (AoE time)</td>
+                </tr>
+                <tr>
+                  <th scope="col">Notification to authors</th>
+                  <td>Monday, August 7, 2023 </td>
+                </tr>
+                <tr>
+                  <th scope="col">Camera ready deadline</th>
+                  <td>Saturday, August 19, 2023 </td>
+                </tr>
+            </table>
+            </p>
+            </div></div></div>
+        </div>
+
+
+        <div class="section" id="speakers">
+            <div class="title">
+                <span>Keynote Speakers</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/ben_poole.png" alt="Ben Poole">
+                            <ul class="social">
+                                <a href="https://cs.stanford.edu/~poole/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/poolio">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Ben Poole<br><span>Google Brain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/matt_tancik.jpeg" alt="Matthew Tancik">
+                            <ul class="social">
+                                <a href="https://www.matthewtancik.com/about-me">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Matthew Tancik<br><span>LumaAI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/jiajun_wu.jpg" alt="Jiajun Wu">
+                            <ul class="social">
+                                <a href="https://jiajunwu.com/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/jiajunwu_cs">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Jiajun Wu<br><span>Stanford</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/daniel_ritchie.jpg" alt="Daniel Ritchie">
+                            <ul class="social">
+                                <a href="https://dritchie.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Daniel Ritchie<br><span>Brown University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/rana_hanocka.jpeg" alt="Rana Hanocka">
+                            <ul class="social">
+                                <a href="https://people.cs.uchicago.edu/~ranahanocka/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/RanaHanocka">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Rana Hanocka<br><span>University of Chicago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/speakers/gul_varol.jpg" alt="Gul Varol">
+                            <ul class="social">
+                                <a href="https://imagine.enpc.fr/~varolg/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/gulvarol">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Gul Varol<br><span>École des Ponts ParisTech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">
+                <span>Spotlight Speakers</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/spotlight/naureen_mahmood.png" alt="Naureen Mahmood">
+                            <ul class="social">
+                                <a href="https://meshcapade.com/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/naureenmahmood">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+
+                        </div>
+                        <div class="caption">
+                            Naureen Mahmood<br><span>CEO of Meshcapade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/spotlight/terrance_devries.jpg" alt="Terrance DeVries">
+                            <ul class="social">
+                                <a href="https://tdevries.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/DevriesTerrance">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Terrance DeVries<br><span>Founding Memmber and Research Scientist at LumaAI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/spotlight/kai_hung.jpg" alt="Kai-Hung Chang">
+                            <ul class="social">
+                                <a href="https://kaihungchang.com/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/kaihungchang1">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Kai-Hung Chang<br><span>ML Engineer at Google</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/spotlight/matt-deitke.jpg" alt="Matt Deitke">
+                            <ul class="social">
+                                <a href="https://mattdeitke.com/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/mattdeitke">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Matt Deitke<br><span>Researcher at Allen Institure for AI </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="organizers">
+            <div class="title">
+                <span>Organizers</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/despoina_paschalidou_r.jpg" alt="Despoina Paschalidou">
+                            <ul class="social">
+                                <a href="http://paschalidoud.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/paschalidoud_1">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Despoina Paschalidou<br><span>Stanford</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/georgios_pavlakos.jpg" alt="Georgios Pavlakos" class="top-left">
+                            <ul class="social">
+                                <a href="https://geopavlakos.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/geopavlakos">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Georgios Pavlakos<br><span>UC Berkeley</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/amlan_kar.jpg" alt="Amlan Kar">
+                            <ul class="social">
+                                <a href="https://amlankar.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/amlankar95">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+
+                        </div>
+                        <div class="caption">
+                            Amlan Kar<br><span>University of Toronto and NVIDIA Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/kaichun_mo.jpg" alt="Kaihcun Mo">
+                            <ul class="social">
+                                <a href="https://kaichun-mo.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/KaichunMo">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Kaichun Mo<br><span>NVIDIA Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/davis_rempe.jpg" alt="Davis Rempe" class="top-left">
+                            <ul class="social">
+                                <a href="https://davrempe.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/davrempe">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Davis Rempe<br><span>NVIDIA Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/paul_guerrero.png" alt="Paul Guerrero">
+                            <ul class="social">
+                                <a href="https://paulguerrero.net/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Paul Guerrero<br><span>Adobe Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/siyu_tang.jpg" alt="Siyu Tang">
+                            <ul class="social">
+                                <a href="https://vlg.inf.ethz.ch/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/SiyuTang3">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Siyu Tang<br><span>ETH Zurich</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/leonidas_guibas.jpg" alt="Leonidas Guibas" class="top-left">
+                            <ul class="social">
+                                <a href="https://geometry.stanford.edu/member/guibas/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Leonidas Guibas<br><span>Stanford</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">
+                <span>Relevant Previous Workshops</span>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>CVPR 2023: <a href="https://ai4cc.net/">AI for Content Creation</a> </li>
+                    <li>CVPR 2022: <a href="https://ai4cc.net/2022/">AI for Content Creation</a> </li>
+                    <li>ECCV 2022: <a href="https://learn3dg.github.io/">Learning to Generate 3D Shapes and Scenes</a> </li>
+                    <li>CVPR 2021: <a href="https://ai4cc.net/2021/">AI for Content Creation</a> </li>
+                    <li>CVPR 2021: <a href="https://learn3dg.github.io/static/2021.html">Learning to Generate 3D Shapes and Scenes</a> </li>
+                    <li>CVPR 2020: <a href="https://ai4cc.net/2020/">AI for Content Creation</a> </li>
+                    <li>CVPR 2020: <a href="https://learn3dgen.github.io/">Learning 3D Generative Models</a> </li>
+                    <li>CVPR 2019: <a href="https://nvlabs.github.io/dl-for-content-creation/">Deep Learning for Content Creation</a> </li>
+                    <li>CVPR 2019: <a href="https://3dscenegen.github.io/">3D Scene Generation</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+        <div id="navbar-bottom">
+        <nav class="navbar sticky-bottom bg-light">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://cs.stanford.edu/">
+                    <img src="gfx/logos/stanford-logo.png" alt="Stanford" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://bair.berkeley.edu/">
+                    <img src="gfx/logos/berkeley-logo.png" alt="Berkeley" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://www.nvidia.com/en-us/research/">
+                    <img src="gfx/logos/nvidia-logo.png" alt="NVIDIA" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://www.utoronto.ca/">
+                    <img src="gfx/logos/uoft-logo.svg" alt="Univertisy of Toronto" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://research.adobe.com/">
+                    <img src="gfx/logos/adobe-logo.png" alt="Adobe" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://ethz.ch/en.html">
+                    <img src="gfx/logos/eth-logo.png" alt="ETH Zurich" class="logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        </div>
+        </div>
+        <div class="d-flex">
+        <div class="col-6 d-none d-md-block col-button" style="text-align: left;">
+            <a class="btn btn-primary me-md-2" role="button" href="https://github.com/ai3dcc/ai3dcc.github.io">Webpage Template</a>
+        </div>
+        <div class="col-6 d-none d-md-block col-button" style="text-align: right;">
+            <a class="btn btn-primary me-md-2" role="button" href="#home" >Top</a>
+        </div>
+        </div>
+        <!---
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-block col-button">
+            <a class="btn btn-primary me-md-2" role="button" href="#home" >Top</a>
+        </div>-->
+
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navbar-top'
+            });
+        </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LXC9BQBBX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-4LXC9BQBBX');
+        </script>
+    </body>
+</html>
