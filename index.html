@@ -17,7 +17,7 @@
     <body>
         <div id="navbar-top">
         <nav class="navbar navbar-light px-3">
-            <a class="navbar-brand" href="https://eccv2024.ecva.net/">AI3DCC @ ECCV2024</a>
+            <a class="navbar-brand" href="https://iccv.thecvf.com/">AI3DCC @ ICCV2025</a>
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html#home">Home</a>
@@ -37,10 +37,10 @@
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <div class="jumbotron" id="home">
             <div class="title">
-                <h4>The second workshop on</h4>
+                <h4>The 3rd Workshop on</h4>
                 <h2>AI for 3D Content Creation</h2>
-                <h4>Brown 1 - 14:00-17:00 - September 30th Half Day @ECCV2024 </h4>
-                <h4>Milan, Italy</h4>
+                <h4>08:30-13:30 - October 20th Half Day @ICCV2025 </h4>
+                <h4>Honolulu, Hawai'i</h4>
             </div>
 
 
@@ -59,41 +59,41 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
                       <video autoplay muted loop height="500">
-                        <source src="gfx/carousel/prolificdreamer.mp4" type="video/mp4">
+                        <source src="gfx/carousel/trellis.mp4" type="video/mp4">
                       </video>
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation</h5>
-                        <p>NeurIPS 2023</p>
+                        <h5>Structured 3D Latents for Scalable and Versatile 3D Generation</h5>
+                        <p>CVPR 2025</p>
                       </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                       <video autoplay muted loop height="500">
-                        <source src="gfx/carousel/text2room.mp4" type="video/mp4">
+                        <source src="gfx/carousel/humoto.mp4" type="video/mp4">
                       </video>
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models</h5>
-                        <p>ICCV 2023</p>
+                        <h5>HUMOTO: A 4D Dataset of Mocap Human Object Interactions</h5>
+                        <p>ICCV 2025</p>
                       </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                       <video autoplay muted loop height="500">
-                        <source src="gfx/carousel/get3d.mp4" type="video/mp4">
+                        <source src="gfx/carousel/nuiscene.mp4" type="video/mp4">
                       </video>
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images</h5>
-                        <p>NeurIPS 2022</p>
+                        <h5>NuiScene Exploring Efficient Generation of Unbounded Outdoor Scenes</h5>
+                        <p>ICCV 2025</p>
                       </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                       <video autoplay muted loop height="500">
-                        <source src="gfx/carousel/magic123.mp4" type="video/mp4">
+                        <source src="gfx/carousel/wonderworld.mp4" type="video/mp4">
                       </video>
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors</h5>
-                        <p>arXiV 2023</p>
+                        <h5>WonderWorld: Interactive 3D Scene Generation from a Single Image</h5>
+                        <p>CVPR 2025</p>
                       </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <!-- <div class="carousel-item" data-bs-interval="2000">
                       <video autoplay muted loop height="500">
                         <source src="gfx/carousel/instruct-nerf2nerf.mp4" type="video/mp4">
                       </video>
@@ -138,7 +138,7 @@
                         <h5>One-2-3-45: Any Single Image to 3D Mesh in 45 Seconds without Per-Shape Optimization</h5>
                         <p>arXiV 2023</p>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -167,42 +167,31 @@
             open challenge.
             </p>
             <p>
-            In this workshop, we seek to bring together researchers working on generative
-            models for 3D shapes, humans, and scenes to discuss the latest
-            advances, existing limitations and next steps towards developing
-            generative pipelines capable of producing fully controllable 3D
-            environments with multiple humans interacting with each other or
-            with objects in the scene. In the last few years, there has been
-            significant progress in generating 3D objects, humans, and scenes
-            independently, but only recently has the research community shifted
-            their attention towards generating meaningful dynamics and
-            interactions between humans or humans and other scene elements. To
-            this end, in our workshop we look forward to cover the following
-            topics:
+            In this workshop, we seek to bring together researchers working on generative models 
+            for 3D humans, objects, and scenes to discuss the latest advances and next steps 
+            toward developing generative pipelines capable of producing fully controllable 3D 
+            environments with multiple humans interacting with each other or objects in the scene. 
+            In summary, the expected covered topics are:            
             <ul>
-            <li><strong>Representations:</strong> What is the most appropriate
-            representation for generating meaningful high-quality 3D textured
-            objects? What is the best representation that can enable intuitive
-            control over the generated objects? How can we effectively
-            represent interactions between humans and objects?</li>
-            <li><strong>Modelling:</strong> How can we construct powerful models
-            that can reliably generate humans performing plausible real life
-            activities? How can we construct an accurate 3D model of our world
-            that could allow us to manipulate both the appearance of the scene
-            elements as well as their spatial composition?</li>
-            <li><strong>Common Sense Reasoning and Knowledge:</strong> How can
-            we incorporate common sense knowledge about 3D objects and scenes,
-            such as part structures, arrangements of objects from Large
-            Language Models and Vision Language Models to enable training with
-            fewer data?</li>
-            <li><strong>Applications:</strong> How can we leverage 2D priors to
-            enable photo-realistic 3D content creation? What are the creative
-            tools that designers and product designers really need make their
-            workflow more efficient? Are there new fields that could benefit
-            from generative AI, such as construction and agriculture?</li>
-            <li><strong>Risks and Ethical Considerations: </strong>What are the
-            ethical implications that arise from artificially-generated 3D
-            content and how we can address them?</li>
+            <li><strong>Representations:</strong> What is the most appropriate representation for 
+                generating high-quality 3D assets? What is the best representation that can enable 
+                intuitive control over the generated objects? How can we effectively represent 
+                interactions between humans and objects?</li>
+            <li><strong>Modelling:</strong> How can we build a foundation model that is capable of 
+                generating diverse, high-quality and photo-realistic humans/objects/scenes? 
+                How can we ensure expressiveness that faithfully captures subtle details and 
+                nuances corresponding to the semantics of diverse input conditions? How can we 
+                maintain robustness under varied real-world conditions (\emph{e.g.,} lighting, hard pose)?</li>
+            <li><strong>Interaction:</strong>  How can we construct powerful models that can reliably generate 
+                human/objects performing plausible real-life motion with complex interactions? How far are we 
+                from the world model that could allow us to manipulate both the appearance of the scene elements 
+                as well as their spatial composition? How can we incorporate common sense knowledge about 3D objects 
+                and scenes, such as part structures, and arrangements of objects from Large Foundation Models or 
+                physics simulators to enable training with fewer data?</li>
+            <li><strong>Applications:</strong> Are there new fields that could benefit from generated 3D content, 
+                such as embodied AI, construction and agriculture? How can we leverage 2D priors to enable photo-realistic 
+                3D content creation? How can we build tools that meet designers' real need to make their workflow more 
+                efficient (\emph{e.g.,} interactive editing, asset rigging)?</li>
             </ul>
             </p>
             </div></div></div>
@@ -213,8 +202,8 @@
         </div>
             <div class="content"><div class="row"><div class="col">
                 <ul>
-                    <li><strong>September 29, 2024: </strong> Workshop's schedule released.
-                    <li><strong>June 3, 2024: </strong>
+                    <!-- <li><strong>September 29, 2024: </strong> Workshop's schedule released. -->
+                    <li><strong>June 30, 2025: </strong>
                     Workshop website launched, with the tentative list of the
                     invited speakers announced.</li>
                 </ul>
@@ -226,10 +215,10 @@
                 <span>Schedule</span>
             </div>
             <div class="content">
-            <p> The workshop will take place on <strong> Tuesday, September 30th in Brown 1</strong>
-             Note that all times in the below schedule are in CET.</p>
+            <p> The workshop will take place on <strong> October 20th.</strong>
+             The specific schedule is TBD.</p>
 
-            <table class="table">
+            <!-- <table class="table">
                 <tr>
                     <td>14:00-14:10</td>
                     <td> </td>
@@ -273,7 +262,7 @@
                     <td> </td>
                     <td>Closing Remarks</td>
                 </tr>
-            </table>
+            </table> -->
             </div>
         </div>
 
@@ -285,54 +274,54 @@
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/speakers/angjoo_kanazawa.png" alt="Angjoo Kanazawa">
+                            <img src="gfx/speakers/angela_dai.jpg" alt="Angela Dai">
                             <ul class="social">
-                                <a href="https://people.eecs.berkeley.edu/~kanazawa/">
+                                <a href="https://www.3dunderstanding.org/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
-                                <a href="https://twitter.com/akanazawa">
+                                <a href="https://x.com/angelaqdai">
                                     <li class="icon"><i class="fa fa-twitter"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Angjoo Kanazawa<br><span>Berkeley</span>
+                            Angela Dai<br><span>Technical University of Munich</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/speakers/matthias_niessner.jpeg" alt="Matthias Niessner">
+                            <img src="gfx/speakers/christian theobalt.webp" alt="Christian Theobalt">
                             <ul class="social">
-                                <a href="https://www.niessnerlab.org/">
+                                <a href="https://www.mpi-inf.mpg.de/departments/visual-computing-and-artificial-intelligence">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
-                                <a href="https://twitter.com/MattNiessner">
+                                <!-- <a href="https://x.com/">
                                     <li class="icon"><i class="fa fa-twitter"></i></li>
-                                </a>
+                                </a> -->
                             </ul>
                         </div>
                         <div class="caption">
-                            Matthias Niessner<br><span>Technical University of Munich</span>
+                            Christian Theobalt<br><span>Max Planck Institute for Informatics</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/speakers/dimitrios_tzionas.jpeg" alt="Dimitrios Tzionas">
+                            <img src="gfx/speakers/hao_su.jpg" alt="Hao Su">
                             <ul class="social">
-                                <a href="https://dtzionas.com/">
+                                <a href="https://cseweb.ucsd.edu/~haosu/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
-                                <a href="https://twitter.com/dimtzionas">
+                                <a href="https://x.com/HaoSuLabUCSD">
                                     <li class="icon"><i class="fa fa-twitter"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Dimitrios Tzionas<br><span>University of Amsterdam</span>
+                            Hao Su<br><span>University of California San Diego</span>
                         </div>
                     </div>
                 </div>
@@ -341,36 +330,33 @@
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/spotlight/lea_mueller.jpeg" alt="Lea Mueller">
+                            <img src="gfx/speakers/philipp_henzler.jpg" alt="Philipp Henzler">
                             <ul class="social">
-                                <a href="https://sites.google.com/view/muelea">
+                                <a href="https://henzler.github.io/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
-                                <a href="https://twitter.com/leamue27">
+                                <a href="https://x.com/philipphenzler">
                                     <li class="icon"><i class="fa fa-twitter"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Lea Mueller<br><span>UC Berkeley</span>
+                            Philipp Henzler<br><span>Google</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/spotlight/yinghao_xu.jpeg" alt="Yinghao Xu">
+                            <img src="gfx/speakers/andrea_vedaldi.jpg" alt="Andrea Vedaldi">
                             <ul class="social">
-                                <a href="https://justimyhxu.github.io/">
+                                <a href="https://www.robots.ox.ac.uk/~vedaldi/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
-                                </a>
-                                <a href="https://twitter.com/YinghaoXu1">
-                                    <li class="icon"><i class="fa fa-twitter"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Yinghao Xu<br><span>Stanford</span>
+                            Andrea Vedaldi<br><span>University of Oxford</span>
                         </div>
                     </div>
                 </div>
@@ -385,18 +371,18 @@
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/organizers/despoina_paschalidou_r.jpg" alt="Despoina Paschalidou">
+                            <img src="gfx/organizers/hezhen_hu.jpg" alt="Hezhen Hu" class="top-left">
                             <ul class="social">
-                                <a href="http://paschalidoud.github.io/">
+                                <a href="https://alexhu.top/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
-                                <a href="https://twitter.com/paschalidoud_1">
+                                <a href="https://x.com/AlexHu0212">
                                     <li class="icon"><i class="fa fa-twitter"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Despoina Paschalidou<br><span>NVIDIA</span>
+                            Hezhen Hu<br><span>UT Austin</span>
                         </div>
                     </div>
                 </div>
@@ -419,6 +405,44 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/despoina_paschalidou_r.jpg" alt="Despoina Paschalidou">
+                            <ul class="social">
+                                <a href="http://paschalidoud.github.io/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://twitter.com/paschalidoud_1">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Despoina Paschalidou<br><span>NVIDIA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div>
+                            <img src="gfx/organizers/nikolaos_kolotouros.jpg" alt="Nikos Kolotouros" class="top-left">
+                            <ul class="social">
+                                <a href="https://www.nikoskolot.com/">
+                                    <li class="icon"><i class="fa fa-home"></i></li>
+                                </a>
+                                <a href="https://x.com/nikoskolot">
+                                    <li class="icon"><i class="fa fa-twitter"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            Nikos Kolotouros<br><span>Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
                             <img src="gfx/organizers/davis_rempe.jpg" alt="Davis Rempe" class="top-left">
@@ -451,8 +475,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
@@ -483,22 +505,7 @@
 
                         </div>
                         <div class="caption">
-                            Amlan Kar<br><span>University of Toronto and NVIDIA Research</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <div>
-                            <img src="gfx/organizers/daniel_ritchie.jpg" alt="Daniel Ritchie">
-                            <ul class="social">
-                                <a href="https://dritchie.github.io/">
-                                    <li class="icon"><i class="fa fa-home"></i></li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="caption">
-                            Daniel Ritchie<br><span>Brown University</span>
+                            Amlan Kar<br><span>University of Toronto and NVIDIA</span>
                         </div>
                     </div>
                 </div>
@@ -521,62 +528,29 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
+
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
-                            <img src="gfx/organizers/manolis_savva.jpg" alt="Manolis Savva" class="top-left">
+                            <img src="gfx/organizers/daniel_ritchie.jpg" alt="Daniel Ritchie">
                             <ul class="social">
-                                <a href="https://msavva.github.io/">
+                                <a href="https://dritchie.github.io/">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
                             </ul>
                         </div>
                         <div class="caption">
-                            Manolis Savva<br><span>Simon Fraser University</span>
+                            Daniel Ritchie<br><span>Brown University</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <div>
-                            <img src="gfx/organizers/paul_guerrero.png" alt="Paul Guerrero">
-                            <ul class="social">
-                                <a href="https://paulguerrero.net/">
-                                    <li class="icon"><i class="fa fa-home"></i></li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="caption">
-                            Paul Guerrero<br><span>Adobe Research</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <div>
-                            <img src="gfx/organizers/siyu_tang.jpg" alt="Siyu Tang">
-                            <ul class="social">
-                                <a href="https://vlg.inf.ethz.ch/">
-                                    <li class="icon"><i class="fa fa-home"></i></li>
-                                </a>
-                                <a href="https://twitter.com/SiyuTang3">
-                                    <li class="icon"><i class="fa fa-twitter"></i></li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="caption">
-                            Siyu Tang<br><span>ETH Zurich</span>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div>
                             <img src="gfx/organizers/leonidas_guibas.jpg" alt="Leonidas Guibas" class="top-left">
                             <ul class="social">
-                                <a href="https://geometry.stanford.edu/member/guibas/">
+                                <a href="https://geometry.stanford.edu/?member=guibas">
                                     <li class="icon"><i class="fa fa-home"></i></li>
                                 </a>
                             </ul>
@@ -586,6 +560,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="section">
@@ -594,6 +569,7 @@
             </div>
             <div class="content">
                 <ul>
+                    <li>ECCV 2024: <a href="https://ai3dg.github.io/">AI for 3D Content Creation</a> </li>
                     <li>CVPR 2024: <a href="https://ai3dg.github.io/">AI for 3D Generation</a> </li>
                     <li>CVPR 2024: <a href="https://cveu.github.io/">AI for Creative Visual Content Generation Editing and Understanding</a> </li>
                     <li>CVPR 2024: <a href="https://ai4cc.net/">AI for Content Creation</a> </li>
@@ -623,13 +599,13 @@
                     </a>
                 </div>
                 <div class="col-xs-3 col-md-3 col-img">
-                    <a href="https://www.sfu.ca/">
-                    <img src="gfx/logos/sfu-logo.png" alt="Simon Fraser University" class="logo">
+                    <a href="https://www.utexas.edu/">
+                    <img src="gfx/logos/utaustin.png" alt="UT Austin" class="logo">
                     </a>
                 </div>
                 <div class="col-xs-3 col-md-3 col-img">
-                    <a href="https://www.nvidia.com/en-us/research/">
-                    <img src="gfx/logos/nvidia-logo.png" alt="NVIDIA" class="logo">
+                    <a href="https://www.sfu.ca/">
+                    <img src="gfx/logos/sfu-logo.png" alt="Simon Fraser University" class="logo">
                     </a>
                 </div>
                 <div class="col-xs-3 col-md-3 col-img">
@@ -638,24 +614,23 @@
                     </a>
                 </div>
                 <div class="col-xs-3 col-md-3 col-img">
-                    <a href="https://research.adobe.com/">
-                    <img src="gfx/logos/adobe-logo.png" alt="Adobe" class="logo">
-                    </a>
-                </div>
-                <div class="col-xs-3 col-md-3 col-img">
-                    <a href="https://ethz.ch/en.html">
-                    <img src="gfx/logos/eth-logo.png" alt="ETH Zurich" class="logo">
-                    </a>
-                </div>
-                <div class="col-xs-3 col-md-3 col-img">
                     <a href="https://www.brown.edu/">
-                    <img src="gfx/logos/brown-logo.png" alt="Brown University" class="logo">
+                    <img src="gfx/logos/brown.png" alt="Brown University" class="logo">
                     </a>
                 </div>
-
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://www.nvidia.com/en-us/research/">
+                    <img src="gfx/logos/nvidia-logo.png" alt="NVIDIA" class="logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-img">
+                    <a href="https://research.google/">
+                    <img src="gfx/logos/google-logo.png" alt="Google" class="logo">
+                    </a>
+                </div>
                 <div class="col-xs-3 col-md-3 col-img">
                     <a href="https://www.amazon.science/">
-                    <img src="gfx/logos/amazon-logo.png" alt="Amazon" class="logo">
+                    <img src="gfx/logos/amazon.png" alt="Amazon" class="logo">
                     </a>
                 </div>
             </div>
